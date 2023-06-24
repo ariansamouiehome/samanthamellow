@@ -19,7 +19,7 @@
     background: $brand-white;
 
     &.not-selected {
-      color: rgba($brand-black, 0.2)
+      color: $brand-grey;
     }
 
     .theme-select-button-icon {

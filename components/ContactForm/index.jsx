@@ -132,8 +132,8 @@ const ContactForm = () => {
                             name="message"
                             value="message"
                             type="textarea"
-                            label="Message; style, ideas you'd like to incorporate, address etc"
-                            placeholder="Additional information you think will be useful"
+                            label="Message"
+                            placeholder="Let me know what you are looking for"
                             errorActive={errorActive}
                             loading={loading}
                         />

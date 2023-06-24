@@ -110,7 +110,7 @@ const Home = () => {
                 <FullWidthInfo
                     hTag={3}
                     title="Connect With Me"
-                    description="We will help you create your perfect kitchen."
+                    description="Fill out the form below to start your healing journey."
                     headingLine
                 />
 
