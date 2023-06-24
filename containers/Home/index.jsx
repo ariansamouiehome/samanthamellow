@@ -15,7 +15,7 @@ const Home = () => {
     const columnInfoImage = [
         {
             title: 'Contemporary',
-            imageBig: 'https://d1e00ek4ebabms.cloudfront.net/production/a4c161aa-5365-458d-b5b0-e03c98eb1e78.jpg'
+            imageBig: '/images/painting-1.jpeg'
         },
         {
             title: 'Traditional',
