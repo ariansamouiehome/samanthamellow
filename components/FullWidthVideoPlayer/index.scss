@@ -50,17 +50,17 @@
     margin: 0 0 30px;
 
     .content-title {
-      color: $brand-white;
+      color: $brand-black;
       font-size: 28px;
       font-family: $brand-font-heading-one;
       text-align: center;
       transition: 1s;
       word-spacing: 5px;
-      text-shadow: 1px 1px $brand-black;
+      text-shadow: 1px 1px $brand-white;
       -webkit-text-stroke: 1px rgba($brand-black, 0.5);
 
       @include media-breakpoint-up(md) {
-        text-shadow: 2px 2px $brand-black;
+        text-shadow: 2px 2px $brand-white;
         font-size: 40px;
       }
     }

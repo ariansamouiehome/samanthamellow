@@ -68,7 +68,7 @@ const Home = () => {
             </div>
 
             <FullWidthVideoPlayer
-                title="Understanding The Paintings"
+                title="How The Paintings Work"
                 iframeSrc="https://www.youtube.com/embed/ALH1Xjr1Ycc?rel=0"
                 thumbnailImage="/images/sam.jpeg"
                 cta_onClick={() => scrollToPosition('contact-form')}
