@@ -1,0 +1,103 @@
+.theme-button {
+  display: block;
+  position: relative;
+  padding: 10px 35px;
+  border-radius: 5px;
+  border: 1px solid $black;
+  background: $brand-color-one;
+  color: $brand-black;
+  text-decoration: none;
+  transition: 0.5s;
+  overflow: hidden;
+  text-align: center;
+  font-family: $brand-font-copy-one;
+  text-transform: uppercase;
+  min-width: 130px;
+  min-height: 46px;
+  //text-shadow: 1px 1px rgba($brand-black, 0.5);
+  font-weight: bold;
+
+  &:before,
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background: $brand-color-one;
+    top: 50%;
+    transition: 0.3s;
+  }
+
+  &:before {
+    left: 0;
+    transform: translateY(-50%) translateX(-110%) rotate(-60deg);
+  }
+
+  &:after {
+    right: 0;
+    transform: translateY(-50%) translateX(110%) rotate(-60deg);
+  }
+
+  &:hover,
+  &.active {
+    text-decoration: none;
+    background: $brand-black;
+    color: $white;
+    border-color: $brand-color-one;
+    //text-shadow: 1px 1px rgba($brand-color-one, 0.5);
+    box-shadow: 0 0 10px 1px rgba($brand-color-one, 0.5) inset;
+
+    &:before {
+      transform: translateY(-50%) translateX(-50%) rotate(-60deg);
+    }
+
+    &:after {
+      transform: translateY(-50%) translateX(50%) rotate(-60deg);
+    }
+  }
+
+  &.loading {
+    pointer-events: none;
+    background: rgba($brand-color-one, 0.5);
+  }
+
+  &.secondary {
+    background: $brand-black;
+    color: $brand-white;
+    //text-shadow: 1px 1px rgba($brand-color-one, 0.5);
+
+    &:before,
+    &:after {
+      background: $brand-black;
+    }
+
+    &:hover {
+      background: $brand-color-one;
+      border-color: $brand-black;
+      color: $brand-black;
+      //text-shadow: 1px 1px rgba($brand-white, 0.5);
+      box-shadow: 0 0 7px 1px rgba($brand-black, 0.5) inset;
+    }
+  }
+
+  //&.secondary {
+  //  background: $brand-color-three;
+  //  color: $brand-black;
+  //  font-weight: bold;
+  //  text-shadow: 1px 1px rgba($brand-black, 0.5);
+  //
+  //  &:before,
+  //  &:after {
+  //    background: $brand-color-three;
+  //  }
+  //
+  //  &:hover {
+  //    background: $brand-black;
+  //    border-color: $brand-black;
+  //    color: $brand-color-three;
+  //    text-shadow: 1px 1px rgba($brand-white, 0.5);
+  //    box-shadow: 0 0 7px 1px rgba($brand-color-three, 0.5) inset;
+  //  }
+  //}
+}

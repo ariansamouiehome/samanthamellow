@@ -1,0 +1,104 @@
+.login-register-form {
+  padding: 130px 15px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    padding: 170px 15px 150px;
+    min-height: 100vh;
+  }
+
+  &:before {
+    display: flex;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background-image: url("/images/pattern-back-1.png");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-name: fadeIn_02;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+  }
+
+  .row {
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .login-form-hold {
+    position: relative;
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 0 9px 3px rgba($brand-color-one, 0.5);
+    animation-name: fadeUp;
+    animation-fill-mode: both;
+    animation-duration: 1.5s;
+    background: $brand-black;
+  }
+}
+
+.tab-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 1px $brand-color-one;
+  border-style: solid none;
+
+  .nav-items {
+    display: flex;
+    flex-basis: 100%;
+
+    .item-buttons {
+      width: 100%;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.tab-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  padding: 15px 15px 25px;
+  animation-name: fadeUp;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+
+  .heading-one {
+    font-family: $brand-font-heading-one;
+    color: $white;
+  }
+
+  .body-copy {
+    color: $brand-white;
+    margin: 0 0 30px;
+    font-size: 16px;
+    font-family: $brand-font-copy-one;
+  }
+
+  .clickable {
+    margin: 0 0 10px;
+  }
+
+  .theme-button {
+    margin: 15px 0 0;
+  }
+}

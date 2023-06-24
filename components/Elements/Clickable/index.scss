@@ -1,0 +1,86 @@
+
+.clickable {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  color: $brand-color-one;
+  transition: 0.5s;
+  font-family: $brand-font-copy-one;
+  cursor: pointer;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: $brand-color-one;
+    width: 0;
+    transition: 0.5s;
+  }
+
+  .clickable-tooltip {
+    // set width inline
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    display: inline-block;
+    background: $brand-white;
+    border-radius: 5px;
+    border: 1px solid rgba($brand-black, 0.5);
+    padding: 5px 10px;
+    z-index: 5;
+    text-align: center;
+    font-size: 12px;
+    color: $brand-black;
+    text-shadow: none;
+    text-transform: uppercase;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+
+    &:before {
+      content:'';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100%);
+      width: 0;
+      height: 0;
+      transition: 0.5s;
+      border-top: solid 10px $brand-white;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent;
+    }
+  }
+
+  &:hover {
+    color: $brand-white;
+
+    &:before {
+      width: 100%;
+      background-color: $brand-color-one;
+    }
+
+    .clickable-tooltip {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+
+      &:before {
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+  }
+
+  &.brand-one {
+    &:before {
+      background-color: $brand-white;
+    }
+    &:hover {
+      color: $brand-color-one;
+    }
+  }
+}
