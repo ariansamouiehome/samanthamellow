@@ -7,9 +7,20 @@ const Nav = (props) => {
 
     const navList = [
         {
+            title: 'Coaching',
+            link: '',
+            target: 'coaching',
+        },
+        {
+            title: 'Intuitive Soul Paintings',
+            link: '',
+            target: 'intuitive-soul-paintings',
+        },
+        {
             title: 'Contact Me',
-            link: ''
-        }
+            link: '',
+            target: 'contact-form',
+        },
     ];
 
     const goToSection = (target) => {
@@ -25,7 +36,7 @@ const Nav = (props) => {
             <ul className="nav-list">
                 {navList.map((item, key) => <li className="list-item" key={`nav-key-${key}`}>
                     <Clickable
-                        onClick={() => goToSection('contact-form')}
+                        onClick={() => goToSection(item.target)}
                         className={`item-link ${router.pathname === item.link ? 'active' : ''}`}
                     >
                         {item.title}

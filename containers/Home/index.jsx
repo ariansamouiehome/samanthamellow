@@ -56,7 +56,7 @@ const Home = () => {
                 />
             </div>
 
-            <div id="second-component">
+            <div id="intuitive-soul-paintings">
                 <ColumnInfoImage
                     title="Intuitive Soul Paintings"
                     description="I do painting things fam"
@@ -84,15 +84,17 @@ const Home = () => {
                 animation
             />
 
-            <BackImageFloatingContent
-                backgroundImage="/images/pattern-back-4.png"
-                title="The SDK British Standard"
-                onClick={() => scrollToPosition('contact-form')}
-                cta_text="Contact Us"
-                headingLine
-            >
-                <p className="body-copy">Our kitchens are all British made, not only do we use the very best British craftsmanship to create our kitchens but we can also avoid delays from overseas deliveries and damage from prolonged shipping by using the local British craftsmanship that is sought after around the world. Delivering your kitchen on time with as little disruption to you as possible. We feel using the resources around us benifit all those around us, by using local quality we keep the local economy as bustling as we can and our carbon footprint as low as we can. Our kitchen units and doors are manufactured in Lancashire, our handles & ironmongery are mostly made in Sheffield, solid natural worktops are not only quarried locally but also manufactured & processed in the North West, this all makes us very proud to showcase the very best in style & craftsmanship while being environmentally conscious.</p>
-            </BackImageFloatingContent>
+            <div id="coaching">
+                <BackImageFloatingContent
+                    backgroundImage="/images/pattern-back-4.png"
+                    title="One-To-One Coaching"
+                    onClick={() => scrollToPosition('contact-form')}
+                    cta_text="Contact Me"
+                    headingLine
+                >
+                    <p className="body-copy">Our kitchens are all British made, not only do we use the very best British craftsmanship to create our kitchens but we can also avoid delays from overseas deliveries and damage from prolonged shipping by using the local British craftsmanship that is sought after around the world. Delivering your kitchen on time with as little disruption to you as possible. We feel using the resources around us benifit all those around us, by using local quality we keep the local economy as bustling as we can and our carbon footprint as low as we can. Our kitchen units and doors are manufactured in Lancashire, our handles & ironmongery are mostly made in Sheffield, solid natural worktops are not only quarried locally but also manufactured & processed in the North West, this all makes us very proud to showcase the very best in style & craftsmanship while being environmentally conscious.</p>
+                </BackImageFloatingContent>
+            </div>
 
             <FullWidthImageTextBanner
                 title="Doing Our Bit"
