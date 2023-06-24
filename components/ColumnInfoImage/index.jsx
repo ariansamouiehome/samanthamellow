@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from "reactstrap";
 import Button from "components/Elements/Button";
+import {scrollToPosition} from "../../utils/functions";
 
 const ColumnInfoImage = (props) => {
 
@@ -74,6 +75,12 @@ const ColumnInfoImage = (props) => {
                             {ctaOutput(item)}
                         </div>
                     </Col>)}
+                    <Col xs={12} className={`inner-content-head`}>
+                        <Button
+                            onClick={() => scrollToPosition('contact-form')}
+                        >Book A Painting</Button>
+                    </Col>
+
                 </Row>
             </Container>
         </Container>

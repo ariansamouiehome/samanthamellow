@@ -52,7 +52,7 @@ const Home = () => {
                     description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet aspernatur cumque expedita harum hic inventore iusto labore maiores molestias nesciunt nihil odio quisquam quo repellendus saepe ut, voluptates voluptatibus."
                     contentCenter
                     showScrollArrow
-                    arrowsOnCLick={() => scrollToPosition('second-component')}
+                    arrowsOnCLick={() => scrollToPosition('intuitive-soul-paintings')}
                 />
             </div>
 

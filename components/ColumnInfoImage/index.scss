@@ -82,6 +82,10 @@
     position: relative;
     transition: 1s;
 
+    &:last-of-type {
+      margin: 0;
+    }
+
     .inner-content-image {
       width: 50px;
       margin: 0 0 20px;
