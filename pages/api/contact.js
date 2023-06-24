@@ -37,8 +37,8 @@ export default async (req, res) => {
 
 
     const mailData = {
-        from: 'samanthamellowwebsite@gmail.com',
-        to: 'samanthamellowwebsite@gmail.com',
+        from: 'mellosamantha66@gmail.com',
+        to: 'mellosamantha66@gmail.com',
         subject: `Message from Website`,
         text: body,
         html: body,
