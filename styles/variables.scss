@@ -1,0 +1,38 @@
+// Colors
+// ------------------------------------------------
+$black: #000;
+$white: #fff;
+
+$brand-black: #3F404C;
+$brand-white: #F0F0F0;
+$brand-grey: #C8C8C8;
+
+$brand-color-one: #DFD4CA;
+$brand-color-two: #9d3603;
+$brand-color-three: #8e8d8a;
+
+$warning: #FF1313;
+
+// Fonts
+// ------------------------------------------------
+
+// Heading
+//$brand-font-heading-one: 'Berkshire Swash', cursive;
+$brand-font-heading-one: 'Zen Loop, cursive';
+$brand-font-heading-two: 'Akronim', cursive;
+
+// Copy
+$brand-font-copy-one: 'Josefin Sans', sans-serif;
+
+// ------------------------------------------------
+$grid-breakpoints: (
+        xxs: 320px,
+        xs: 568px,
+        sm: 667px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1305px,
+        xxxl: 1440px,
+        xxxxl: 1600px,
+);

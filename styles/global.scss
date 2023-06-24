@@ -1,0 +1,110 @@
+body {
+  background: $brand-black;
+  //-webkit-backface-visibility: hidden;
+}
+
+.heading-one {
+  font-size: 45px;
+  margin: 0 0 20px;
+  @include media-breakpoint-up(sm) {
+    font-size: 55px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 65px;
+  }
+}
+
+.body-copy {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+
+#contact-form {
+  border-top: 2px solid $brand-color-one;
+}
+
+.brand-logo {
+  transition: 0.5s;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+
+  @include media-breakpoint-up(sm) {
+    transform: scale(1);
+  }
+
+  .logo-image {
+    max-width: 100%;
+    height: 70px;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .logo-text {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    font-family: $brand-font-copy-one;
+    color: $brand-color-one;
+    transition: 0.5s;
+    font-size: 12px;
+    -webkit-backface-visibility: hidden;
+    letter-spacing: 1.5px;
+
+    @include media-breakpoint-up(sm) {
+      bottom: 0;
+      font-size: 14px;
+    }
+  }
+
+  &:hover {
+    @include media-breakpoint-up(sm) {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.heading-mark {
+  position: relative;
+  margin-bottom: 40px;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    border-radius: 50%;
+    background: $brand-color-one;
+  }
+
+  &.mark-left {
+    &:before {
+      @include media-breakpoint-up(xs) {
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+}
+
+.example-class {
+  @include media-breakpoint-up(xs) {
+
+  }
+}
+
+@for $i from 1 to 10 {
+  .example-loop-item:nth-child(#{$i}) {
+    transition-delay: $i * 0.10s;
+  }
+}
+
+.example-animation {
+  animation-name: fadeUp;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
