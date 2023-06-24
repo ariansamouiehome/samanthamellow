@@ -14,27 +14,27 @@ const Home = () => {
     const columnInfoImage = [
         {
             title: 'Contemporary',
-            imageBig: '/images/contemp.jpeg'
+            imageBig: '/images/sam.jpeg'
         },
         {
             title: 'Traditional',
-            imageBig: '/images/trad.jpeg'
+            imageBig: '/images/sam.jpeg'
         },
         {
             title: 'Rustic',
-            imageBig: '/images/rustic.jpeg'
+            imageBig: '/images/sam.jpeg'
         },
         {
             title: 'Industrial',
-            imageBig: '/images/industrial.jpeg'
+            imageBig: '/images/sam.jpeg'
         },
         {
             title: 'Bohemian',
-            imageBig: '/images/bohemian.jpeg'
+            imageBig: '/images/sam.jpeg'
         },
         {
             title: 'Bespoke',
-            imageBig: '/images/stool.jpeg'
+            imageBig: '/images/sam.jpeg'
         },
     ];
 
@@ -58,8 +58,8 @@ const Home = () => {
 
             <div id="second-component">
                 <ColumnInfoImage
-                    title="Design Yours"
-                    description="A brilliant kitchen is the jewel in the crown of any good home. Our kitchen design team based in Birkdale, Southport work with you and our installation team to create a desirable functional kitchen space. Whether traditional, contempory, rustic, industrial, bohemian, whatever your style, our team has the know how to add those all important touches in design & functionality to help you achieve your dream kitchen. "
+                    title="Intuitive Soul Paintings"
+                    description="I do painting things fam"
                     data={columnInfoImage}
                     headingLine
                 />
