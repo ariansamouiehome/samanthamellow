@@ -10,7 +10,7 @@ const Footer = () => {
     const router = useRouter();
 
     return (
-        <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`} data-aos>
+        <footer className={`main-footer ${router.asPath === '/admin' ? 'admin' : ''}`}>
             <Container>
                 <Row>
                     <Col xs={12} className="main-footer-content">

@@ -15,27 +15,27 @@ const Home = () => {
     const columnInfoImage = [
         {
             title: 'Contemporary',
-            imageBig: '/images/sam.jpeg'
+            imageBig: 'https://d1e00ek4ebabms.cloudfront.net/production/a4c161aa-5365-458d-b5b0-e03c98eb1e78.jpg'
         },
         {
             title: 'Traditional',
-            imageBig: '/images/sam.jpeg'
+            imageBig: 'https://images.squarespace-cdn.com/content/v1/5b1c34b212b13ff62b14bdcc/1614251718632-Z1E54071EJU4PM5W6PTO/N-877+LAT.jpg?format=1500wg'
         },
         {
             title: 'Rustic',
-            imageBig: '/images/sam.jpeg'
+            imageBig: 'https://trendyartideas.com/wp-content/uploads/2022/05/Beautiful-paintings-of-nature.jpg'
         },
         {
             title: 'Industrial',
-            imageBig: '/images/sam.jpeg'
+            imageBig: 'https://media.gq-magazine.co.uk/photos/5d139493976fa36a3ef39940/16:9/pass/image.jpg'
         },
         {
             title: 'Bohemian',
-            imageBig: '/images/sam.jpeg'
+            imageBig: 'https://www.heraldnet.com/wp-content/uploads/2021/10/26713309_web1_TSR-Rob-Schouten-edh-211007.jpg'
         },
         {
             title: 'Bespoke',
-            imageBig: '/images/sam.jpeg'
+            imageBig: 'https://mymodernmet.com/wp/wp-content/uploads/2018/07/oil-painting-underwater-paintings-isabel-emrich-6.jpg'
         },
     ];
 
@@ -87,7 +87,7 @@ const Home = () => {
             <FullWidthImageTextBanner
                 backgroundImage="/images/sam.jpeg"
                 contentCenter
-                title="Have The Kitchen You Want"
+                title="One-To-One Coaching"
                 description="All of the products we provide are produced to the highest quality, enabling us to deliver an unrivaled kitchen product at the highest quality, with practical functionality and style to flaunt."
                 cta_text="book a consultation"
                 onClick={() => scrollToPosition('contact-form')}
@@ -99,7 +99,7 @@ const Home = () => {
             <div id="coaching">
                 <BackImageFloatingContent
                     backgroundImage="/images/pattern-back-4.png"
-                    title="One-To-One Coaching"
+                    title="Learn How To Heal Yourself"
                     onClick={() => scrollToPosition('contact-form')}
                     cta_text="Contact Me"
                     headingLine
@@ -109,8 +109,8 @@ const Home = () => {
             </div>
 
             <FullWidthImageTextBanner
-                title="Doing Our Bit"
-                backgroundImage="/images/sam.jpeg"
+                title="Become Your Authentic Self"
+                backgroundImage="/images/sam-1.jpeg"
                 contentCenter
                 description="The entirety of our carbon footprint is also offset by the tree planting schemes we are involved with. Our membership to the soil association UK is something we're also proud of, as without good soil we would struggle to get good food, good produce makes the kitchen come alive!"
                 alt
