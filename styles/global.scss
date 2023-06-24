@@ -56,12 +56,6 @@ body {
       font-size: 14px;
     }
   }
-
-  &:hover {
-    @include media-breakpoint-up(sm) {
-      transform: scale(0.9);
-    }
-  }
 }
 
 .heading-mark {

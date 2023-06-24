@@ -14,11 +14,9 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={12} className="main-footer-content">
-                        <Link href="/">
-                            <a className="brand-logo">
-                                Social Media Links
-                            </a>
-                        </Link>
+                        <h4 className="brand-logo">
+                            Social Media Links
+                        </h4>
 
                         <ul className="social-media-list">
                             <li className="list-item">

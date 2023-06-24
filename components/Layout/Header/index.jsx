@@ -33,7 +33,7 @@ const Header = (props) => {
             <Container>
                 <Row>
                     <Col xs={12} className="main-header-inner">
-                        <Link href="/">
+                        <Link href="/" legacyBehavior>
                             <a className="brand-logo" onClick={(e) => scrollToTop(e)}>
                                 Samantha Mello
                             </a>
