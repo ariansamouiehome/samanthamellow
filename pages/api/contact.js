@@ -32,13 +32,14 @@ export default async (req, res) => {
     const body = `
         <p><strong>Customer Name: <br /></strong>${req.body.full_name}</p> 
         <p><strong>Customer Email:</strong> <br />${req.body.email}</p> 
+        <p><strong>Service Requested:</strong> <br />${req.body.service}</p> 
         <p><strong>Message:</strong> <br /> ${req.body.message}</p>
     `
 
 
     const mailData = {
-        from: 'mellosamantha66@gmail.com',
-        to: 'mellosamantha66@gmail.com',
+        from: 'samanthamellowwebsite@gmail.com',
+        to: 'samanthamellowwebsite@gmail.com',
         subject: `Message from Website`,
         text: body,
         html: body,

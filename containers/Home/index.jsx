@@ -73,7 +73,7 @@ const Home = () => {
             />
 
             <FullWidthImageTextBanner
-                backgroundImage="/images/kitchen-4.jpeg"
+                backgroundImage="/images/sam.jpeg"
                 contentCenter
                 title="Have The Kitchen You Want"
                 description="All of the products we provide are produced to the highest quality, enabling us to deliver an unrivaled kitchen product at the highest quality, with practical functionality and style to flaunt."
@@ -96,7 +96,7 @@ const Home = () => {
 
             <FullWidthImageTextBanner
                 title="Doing Our Bit"
-                backgroundImage="/images/kitchen-3.jpeg"
+                backgroundImage="/images/sam.jpeg"
                 contentCenter
                 description="The entirety of our carbon footprint is also offset by the tree planting schemes we are involved with. Our membership to the soil association UK is something we're also proud of, as without good soil we would struggle to get good food, good produce makes the kitchen come alive!"
                 alt
@@ -107,7 +107,7 @@ const Home = () => {
             <div id="contact-form">
                 <FullWidthInfo
                     hTag={3}
-                    title="Contact Us"
+                    title="Connect With Me"
                     description="We will help you create your perfect kitchen."
                     headingLine
                 />

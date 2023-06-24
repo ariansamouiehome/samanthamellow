@@ -2,11 +2,17 @@ import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from "reactstrap";
 import axios from "axios";
 import FormInput from "components/Elements/FormInput";
+import Select from 'components/Elements/Select';
 import Button from "components/Elements/Button";
 import AlertMessage from "components/AlertMessage";
 import {scrollToPosition} from "../../utils/functions";
 
 const ContactForm = () => {
+
+    const options = [
+        'One To One Coaching',
+        'Intuitive Soul Painting'
+    ];
 
     // Data
     const contactForm = [
@@ -16,18 +22,6 @@ const ContactForm = () => {
             label: 'Name',
             placeholder: 'Adam Smith'
         },
-        // {
-        //     name: 'kitchen_option',
-        //     type: 'text',
-        //     label: 'Interested in Kitchen Option',
-        //     placeholder: '1, 2 or 3?'
-        // },
-        // {
-        //     name: 'telephone',
-        //     type: 'number',
-        //     label: 'Telephone',
-        //     placeholder: '***********'
-        // },
         {
             name: 'email',
             type: 'email',
@@ -46,8 +40,7 @@ const ContactForm = () => {
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
         full_name: '',
-        // kitchen_option: '',
-        // telephone: '',
+        service: '',
         email: '',
         message: '',
         date: currentDate,
@@ -69,8 +62,7 @@ const ContactForm = () => {
                 .then(data => {
                     setForm({
                         full_name: '',
-                        // kitchen_option: '',
-                        // telephone: '',
+                        service: '',
                         email: '',
                         message: '',
                         date: currentDate,
@@ -99,9 +91,8 @@ const ContactForm = () => {
 
     useEffect(() => {
         if (form.full_name.length === 0 ||
-            // form.kitchen_option.length === 0 ||
+            form.service.length === 0 ||
             form.email.length === 0 ||
-            // form.telephone.length === 0 ||
             form.message.length === 0) {
             setCheckError(false);
         } else {
@@ -126,6 +117,14 @@ const ContactForm = () => {
                             loading={loading}
                         />
                     </Col>)}
+                    <Col xs={12} className="contact-form-each-input">
+                        <label htmlFor='service' className={`form-group-label ${loading ? 'loading' : ''}`}>Service</label>
+                        <Select
+                            defaultValue={form.service}
+                            onChange={(e) => setForm({ ...form, service: e })}
+                            options={options}
+                        />
+                    </Col>
                     <Col xs={12} className="contact-form-each-input">
                         <FormInput
                             form={form}
