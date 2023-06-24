@@ -7,6 +7,7 @@ import FullWidthInfo from "components/FullWidthInfo";
 import BackImageFloatingContent from "components/BackImageFloatingContent";
 import AppHead from "components/Layout/AppHead";
 import ContactForm from "components/ContactForm";
+import FullWidthVideoPlayer from "components/FullWidthVideoPlayer";
 
 const Home = () => {
 
@@ -65,12 +66,19 @@ const Home = () => {
                 />
             </div>
 
-            <FullWidthInfo
-                hTag={3}
-                title="British Designed &amp; Made"
-                description="Mood boards can be supplied with unit, doors, worktop, handles, sink, tap, appliance samples and suggested tile & colour pallets along with quote."
-                headingLine
+            <FullWidthVideoPlayer
+                title="Title here"
+                iframeSrc="https://www.youtube.com/embed/ALH1Xjr1Ycc"
+                thumbnailImage="/images/sam.jpeg"
             />
+
+            {/*<FullWidthInfo*/}
+            {/*    hTag={3}*/}
+            {/*    title="British Designed &amp; Made"*/}
+            {/*    description="Mood boards can be supplied with unit, doors, worktop, handles, sink, tap, appliance samples and suggested tile & colour pallets along with quote."*/}
+            {/*    headingLine*/}
+            {/*    alt*/}
+            {/*/>*/}
 
             <FullWidthImageTextBanner
                 backgroundImage="/images/sam.jpeg"

@@ -19,15 +19,25 @@ const Footer = () => {
                         </h4>
 
                         <ul className="social-media-list">
-                            <li className="list-item">
-                                <a href="https://www.youtube.com/channel/UCJLf_QdB9icW3mhCPX66brg" target="_blank"
-                                   className="item-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
+                            <li className='list-item'>
+                                <a href="https://www.tiktok.com/@mello_samantha?_t=8dRG5auVxb0&_r=1" target='_blank' rel='noreferrer'
+                                   className='item-link'>
+                                    <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'
+                                         viewBox='0 0 48 48'>
                                         <path
-                                            d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z"/>
+                                            d='M38.4,21.68V16c-2.66,0-4.69-.71-6-2.09a8.9,8.9,0,0,1-2.13-5.64V7.86L24.9,7.73s0,.23,0,.54V30.8a5,5,0,1,1-3.24-5.61v-5.5a10.64,10.64,0,0,0-1.7-.14A10.36,10.36,0,1,0,30.32,29.91a10.56,10.56,0,0,0-.08-1.27V19.49A14.48,14.48,0,0,0,38.4,21.68Z' />
                                     </svg>
                                 </a>
                             </li>
+                            {/*<li className="list-item">*/}
+                            {/*    <a href="https://www.youtube.com/channel/UCJLf_QdB9icW3mhCPX66brg" target="_blank"*/}
+                            {/*       className="item-link">*/}
+                            {/*        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">*/}
+                            {/*            <path*/}
+                            {/*                d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z"/>*/}
+                            {/*        </svg>*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                             <li className="list-item">
                                 <a href="https://www.instagram.com/samantha.r.mello/" target="_blank" className="item-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
@@ -37,7 +47,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="list-item">
-                                <a href="https://www.facebook.com/arian.samouie/" target="_blank" className="item-link">
+                                <a href="https://www.facebook.com/SamanthaR.Mello?mibextid=LQQJ4d" target="_blank" className="item-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
                                         <path
                                             d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"/>
