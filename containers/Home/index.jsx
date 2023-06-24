@@ -49,10 +49,11 @@ const Home = () => {
             <div id="first-component">
                 <FullWidthImageTextBanner
                     title="Hi, I'm Samantha"
-                    backgroundImage="/images/sam.jpeg"
+                    backgroundImage="/images/sam-intro.jpeg"
                     description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet aspernatur cumque expedita harum hic inventore iusto labore maiores molestias nesciunt nihil odio quisquam quo repellendus saepe ut, voluptates voluptatibus."
                     contentCenter
                     showScrollArrow
+                    halfBackShadow
                     arrowsOnCLick={() => scrollToPosition('intuitive-soul-paintings')}
                 />
             </div>
