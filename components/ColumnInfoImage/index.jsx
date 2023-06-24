@@ -75,12 +75,6 @@ const ColumnInfoImage = (props) => {
                             {ctaOutput(item)}
                         </div>
                     </Col>)}
-                    <Col xs={12} className={`inner-content-head`}>
-                        <Button
-                            onClick={() => scrollToPosition('contact-form')}
-                        >Book A Painting</Button>
-                    </Col>
-
                 </Row>
             </Container>
         </Container>

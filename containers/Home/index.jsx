@@ -67,9 +67,12 @@ const Home = () => {
             </div>
 
             <FullWidthVideoPlayer
-                title="Title here"
-                iframeSrc="https://www.youtube.com/embed/ALH1Xjr1Ycc"
+                title="Understanding The Paintings"
+                iframeSrc="https://www.youtube.com/embed/ALH1Xjr1Ycc?rel=0"
                 thumbnailImage="/images/sam.jpeg"
+                cta_onClick={() => scrollToPosition('contact-form')}
+                cta_text="Book A Painting"
+                paddingTop
             />
 
             {/*<FullWidthInfo*/}
