@@ -30,7 +30,6 @@ export default async (req, res) => {
         secure: true,
     })
     const body = `
-        <h1>From Website</h1>
         <p><strong>Customer Name: <br /></strong>${req.body.full_name}</p> 
         <p><strong>Customer Email:</strong> <br />${req.body.email}</p> 
         <p><strong>Message:</strong> <br /> ${req.body.message}</p>
@@ -40,7 +39,7 @@ export default async (req, res) => {
     const mailData = {
         from: 'samanthamellowwebsite@gmail.com',
         to: 'samanthamellowwebsite@gmail.com',
-        subject: `Southport Designer Kitchens - ${req.body.full_name}`,
+        subject: `Message from Website`,
         text: body,
         html: body,
     }
